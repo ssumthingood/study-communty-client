@@ -1,8 +1,8 @@
-import Layout from "@components/Layout";
+import SmLayout from "@components/SmLayout";
 import type { NextPage } from "next";
 
 const Login: NextPage = () => {
-    return <Layout children={undefined}></Layout>;
+    return <SmLayout children={undefined}></SmLayout>;
 };
 
 export default Login;
