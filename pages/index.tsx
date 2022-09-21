@@ -7,9 +7,14 @@ const Home: NextPage = () => {
     const { register, handleSubmit, reset } = useForm();
 
     return (
-        <Layout>
-            <TextArea register={register("name", { minLength: 3, maxLength: 13 })} />
-        </Layout>
+        <>
+            <header>
+                <title>studyCommuntiy</title>
+            </header>
+            <Layout>
+                <TextArea register={register("name", { minLength: 3, maxLength: 13 })} />
+            </Layout>
+        </>
     );
 };
 
