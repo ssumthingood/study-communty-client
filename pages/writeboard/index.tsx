@@ -1,15 +1,15 @@
 import Layout from "@components/Layout";
 import type { NextPage } from "next";
 
-const MyPage: NextPage = () => {
+const WriteBoard: NextPage = () => {
     return (
         <>
             <header>
-                <title>MyPage : Username</title>
+                <title>Create Board</title>
             </header>
             <Layout children={undefined}></Layout>
         </>
     );
 };
 
-export default MyPage;
+export default WriteBoard;

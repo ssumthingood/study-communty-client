@@ -9,7 +9,7 @@ const Home: NextPage = () => {
     return (
         <>
             <header>
-                <title>studyCommuntiy</title>
+                <title>StudyCommunity</title>
             </header>
             <Layout>
                 <TextArea register={register("name", { minLength: 3, maxLength: 13 })} />
