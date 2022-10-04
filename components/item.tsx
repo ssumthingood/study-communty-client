@@ -47,3 +47,5 @@ export default function Item({ title, price, comments, hearts, id }: ItemProps) 
         </Link>
     );
 }
+
+//사용안함

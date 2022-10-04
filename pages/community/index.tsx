@@ -13,3 +13,5 @@ const Community: NextPage = () => {
 };
 
 export default Community;
+
+//사용안함(커뮤니티기능 X)

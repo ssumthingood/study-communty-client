@@ -13,3 +13,5 @@ const Board: NextPage = () => {
 };
 
 export default Board;
+
+//사용안함

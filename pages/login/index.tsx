@@ -13,3 +13,5 @@ const Login: NextPage = () => {
 };
 
 export default Login;
+
+//사용안함(소셜로그인으로 대체)

@@ -19,3 +19,5 @@ export default function Button({ large = false, onClick, text, ...rest }: Button
         </button>
     );
 }
+
+//색바꿔서 사용
