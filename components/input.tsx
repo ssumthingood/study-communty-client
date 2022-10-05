@@ -58,3 +58,5 @@ export default function Input({ label, name, kind = "text", register, type, requ
         </div>
     );
 }
+
+//사용안함
