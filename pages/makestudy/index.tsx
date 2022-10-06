@@ -1,7 +1,7 @@
 import Layout from "@components/Layout";
 import type { NextPage } from "next";
 
-const MakeProject: NextPage = () => {
+const MakeStudy: NextPage = () => {
     return (
         <>
             <header>
@@ -12,4 +12,4 @@ const MakeProject: NextPage = () => {
     );
 };
 
-export default MakeProject;
+export default MakeStudy;
