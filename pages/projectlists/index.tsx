@@ -7,7 +7,7 @@ const ProjectList: NextPage = () => {
             <header>
                 <title>ProjectLists</title>
             </header>
-            <Layout children={undefined}></Layout>
+            <Layout>Projectlists</Layout>
         </>
     );
 };

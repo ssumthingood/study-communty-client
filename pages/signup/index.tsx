@@ -7,7 +7,7 @@ const Signup: NextPage = () => {
             <header>
                 <title>SignUp</title>
             </header>
-            <SmLayout children={undefined}></SmLayout>
+            <SmLayout>Signup</SmLayout>
         </>
     );
 };

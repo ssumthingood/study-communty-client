@@ -7,7 +7,7 @@ const Content: NextPage = () => {
             <header>
                 <title>ContentName</title>
             </header>
-            <Layout children={undefined}></Layout>
+            <Layout>content</Layout>
         </>
     );
 };

@@ -11,9 +11,7 @@ const Home: NextPage = () => {
             <header>
                 <title>StudyCommunity</title>
             </header>
-            <Layout>
-                <TextArea register={register("name", { minLength: 3, maxLength: 13 })} />
-            </Layout>
+            <Layout>Main</Layout>
         </>
     );
 };

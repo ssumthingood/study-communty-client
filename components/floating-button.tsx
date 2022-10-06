@@ -17,3 +17,4 @@ export default function FloatingButton({ children, href }: FloatingButton) {
 }
 
 //색바꿔서 사용
+//채팅구현은 미뤄둘거라 생각 X
