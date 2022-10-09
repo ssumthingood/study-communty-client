@@ -5,17 +5,23 @@ import { debounce } from "lodash";
 const useResize = () => {
     // if (typeof window !== "undefined") {
     const [windowSize, setWindowSize] = useState(
-        typeof window !== "undefined"
-            ? //SSR의 특성상 시작부터 window를 가지는 것이 아니므로 windowSize undefined를 막기 위해 미리 초기화한다.
-              //width, height가 0으로 초기화되어도 window 렌더링 시 useEffect에 의해 올바른 값을 가지게 됨
-              {
-                  width: window.innerWidth,
-                  height: window.innerHeight,
-              }
-            : { width: 0, height: 0 },
+        // typeof window !== "undefined"
+        //     ? //SSR의 특성상 시작부터 window를 가지는 것이 아니므로 windowSize undefined를 막기 위해 미리 초기화한다.
+        //       //width, height가 0으로 초기화되어도 window 렌더링 시 useEffect에 의해 올바른 값을 가지게 됨
+        //       {
+        //           width: window.innerWidth,
+        //           height: window.innerHeight,
+        //       }
+        //     :
+        { width: 0, height: 0 },
     );
 
     useEffect(() => {
+        setWindowSize({
+            width: window.innerWidth,
+            height: window.innerHeight,
+        });
+
         const handleResize = debounce(() => {
             setWindowSize({
                 width: window.innerWidth,
