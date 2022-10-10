@@ -9,6 +9,7 @@ interface LayoutProps {
 }
 
 const Layout = ({ children }: LayoutProps) => {
+    const [visible, setVisible] = useState(false);
     const size = useResize();
     const router = useRouter();
 
@@ -29,11 +30,11 @@ const Layout = ({ children }: LayoutProps) => {
                         {/* 640px 아래부터 "Welcome, 유저이름" 대신 "유저이름"만 출력되게 변경 */}
                     </nav>
                     {size.width >= 640 ? (
-                        <p className="text-white px-10 h-12 py-3 text-s opacity-95 leading-6 float-right">Welcome, user!</p>
+                        <button className="text-white mx-10 h-12 py-3 text-s opacity-95 leading-6 float-right">Welcome, user!</button>
                     ) : (
-                        <p className="px-10 text-white h-12 py-3 text-s opacity-95 leading-6">user</p>
+                        <button className="mx-10 text-white h-12 py-3 text-s opacity-95 leading-6">user</button>
                     )}
-                    <a className={cls("text-white px-10 h-12 py-3 text-s opacity-95 leading-6 float-right")} href="/signup">
+                    <a className={cls("text-white mx-10 h-12 py-3 text-s opacity-95 leading-6 float-right")} href="/signup">
                         SignUp
                     </a>
                 </div>

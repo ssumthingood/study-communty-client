@@ -1,17 +1,15 @@
 import Layout from "@components/Layout";
 import type { NextPage } from "next";
 
-const Board: NextPage = () => {
+const ManageStudy: NextPage = () => {
     return (
         <>
             <header>
-                <title>CommunityContentName</title>
+                <title>ManageStudy</title>
             </header>
             <Layout children={undefined}></Layout>
         </>
     );
 };
 
-export default Board;
-
-//사용안함
+export default ManageStudy;
