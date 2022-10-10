@@ -1,17 +1,15 @@
 import Layout from "@components/Layout";
 import type { NextPage } from "next";
 
-const Chat: NextPage = () => {
+const ManageTeam: NextPage = () => {
     return (
         <>
             <header>
-                <title>Chatting:chatuser</title>
+                <title>ManageTeam</title>
             </header>
             <Layout children={undefined}></Layout>
         </>
     );
 };
 
-export default Chat;
-
-//사용 안함
+export default ManageTeam;

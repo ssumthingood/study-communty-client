@@ -15,7 +15,7 @@ const Layout = ({ children }: LayoutProps) => {
     return (
         <>
             <div className="w-full">
-                <div className="w-full bg-black fixed top-0 flex">
+                <div className="w-full bg-black fixed top-0 flex min-w-fit">
                     <nav className="text-gray-400 px-4 h-12 py-3 text-s opacity-95 leading-6 w-fit">
                         <a className={cls(router.pathname === "/" ? "text-white" : "", "px-10 hover:text-white transition-colors")} href="/">
                             Main
@@ -33,6 +33,9 @@ const Layout = ({ children }: LayoutProps) => {
                     ) : (
                         <p className="px-10 text-white h-12 py-3 text-s opacity-95 leading-6">user</p>
                     )}
+                    <a className={cls("text-white px-10 h-12 py-3 text-s opacity-95 leading-6 float-right")} href="/signup">
+                        SignUp
+                    </a>
                 </div>
                 <div className={cls("mt-12")}>{children}</div>
                 <Footer />

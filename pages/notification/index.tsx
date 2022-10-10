@@ -1,15 +1,15 @@
 import SmLayout from "@components/SmLayout";
 import type { NextPage } from "next";
 
-const ModifyUser: NextPage = () => {
+const Notification: NextPage = () => {
     return (
         <>
             <header>
-                <title>ModifyUser : Username</title>
+                <title>Notification</title>
             </header>
-            <SmLayout children={undefined}></SmLayout>
+            <SmLayout>Notification</SmLayout>
         </>
     );
 };
 
-export default ModifyUser;
+export default Notification;
