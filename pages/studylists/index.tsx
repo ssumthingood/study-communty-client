@@ -14,8 +14,10 @@ const StudyList: NextPage = () => {
             </header>
             <Layout>
                 Studylists
-                <Input register={register("searchTerm", { minLength: 3, maxLength: 13 })} label="searchTerm" name="searchTerm" type="text" placeholder="검색어 입력" required />
-                <Button text={"스터디 개설"} />
+                <form>
+                    <Input register={register("searchTerm", { minLength: 3, maxLength: 13 })} label="searchTerm" name="searchTerm" type="text" placeholder="검색어 입력" required />
+                    <Button text={"스터디 개설"} />
+                </form>
             </Layout>
         </>
     );

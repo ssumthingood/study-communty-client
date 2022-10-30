@@ -16,8 +16,10 @@ const ProjectList: NextPage = () => {
             </header>
             <Layout>
                 Projectlists
-                <Input register={register("searchTerm", { minLength: 3, maxLength: 13 })} label="searchTerm" name="searchTerm" type="text" placeholder="검색어 입력" required />
-                <Button text={"프로젝트 개설"} />
+                <form>
+                    <Input register={register("searchTerm", { minLength: 3, maxLength: 13 })} label="searchTerm" name="searchTerm" type="text" placeholder="검색어 입력" required />
+                    <Button text={"프로젝트 개설"} />
+                </form>
             </Layout>
         </>
     );
