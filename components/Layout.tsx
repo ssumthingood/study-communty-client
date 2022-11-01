@@ -29,12 +29,12 @@ const Layout = ({ children }: LayoutProps) => {
                         </a>
                         {/* 640px 아래부터 "Welcome, 유저이름" 대신 "유저이름"만 출력되게 변경 */}
                     </nav>
-                    {size.width >= 640 ? (
+                    {size.width >= 800 ? (
                         <button className="text-white mx-10 h-12 py-3 text-s opacity-95 leading-6 float-right">Welcome, user!</button>
                     ) : (
                         <button className="mx-10 text-white h-12 py-3 text-s opacity-95 leading-6">user</button>
                     )}
-                    <a className={cls("text-white mx-10 h-12 py-3 text-s opacity-95 leading-6 float-right")} href="/signup">
+                    <a className={cls("text-gray-400 hover:text-white mx-10 h-12 py-3 text-s opacity-95 leading-6 float-right")} href="/signup">
                         SignUp
                     </a>
                 </div>
